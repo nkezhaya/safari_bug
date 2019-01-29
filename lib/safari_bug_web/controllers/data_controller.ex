@@ -13,7 +13,7 @@ defmodule SafariBugWeb.DataController do
     |> send_resp(200, Jason.encode!(output()))
   end
 
-  @path to_string(:code.priv_dir(:safari_bug) ++ '/test.json')
+  @path to_string(:code.priv_dir(:safari_bug) ++ '/output.json')
   @data File.read!(@path)
   defp output() do
     Jason.decode!(@data)

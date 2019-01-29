@@ -1,0 +1,2 @@
+defmodule SafariBug do
+end
